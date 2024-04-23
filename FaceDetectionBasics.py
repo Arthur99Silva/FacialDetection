@@ -2,7 +2,7 @@ import cv2
 import mediapipe as mp
 import time
 
-cap = cv2.VideoCapture("C:/Users/Arthur/Documents/FaceDetection/FacialDetection/Videos/run.mp4")
+cap = cv2.VideoCapture("C:/Users/Arthur/Documents/FaceDetection/FacialDetection/Videos/3.mp4")
 pTime = 0
 
 mpFaceDetection = mp.solutions.face_detection
@@ -13,7 +13,7 @@ while True:
     success, img = cap.read()
 
     if not success:
-        print("Error: Failed to read frame from the video.")
+        # print("Error: Failed to read frame from the video.")
         break  # Exit the loop if reading fails
 
     imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
